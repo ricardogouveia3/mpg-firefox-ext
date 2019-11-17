@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MPG - Memorable Password Generator</title>
+  <meta name="description" content="Free secure and memorable password generator.">
+  <meta name="keywords" content="Password, generator">
+  <meta name="author" content="Ricardo Gouveia">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png" />
+</head>
+
+<body>
+  <h1>
+    <img src="assets/img/logo.png" alt="MPG - Memorable Password Generator">
+  </h1>
+
+  <div class="config-table">
+    <form action="">
+      <div class="double-field">
+        <div class="field">
+          <label for="n-components">Dictionary:</label>
+          <div class="switch-frame" id="dictionaryFrame">
+            <img src="assets/img/flag/us.png" id="dictionaryLanguage" alt="Dictionary language" class="flag">
+          </div>
+        </div>
+        <div class="field">
+          <label for="n-components">Components:</label>
+          <input id="numberOfComponents" type="number" min="2" max="6" value="3" name="n-components">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="n-components">Separator:</label>
+        <select id="selectedSeparator">
+          <option value=".">.</option>
+          <option value="!">!</option>
+          <option value="@">@</option>
+          <option value="-">-</option>
+          <option value="_">_</option>
+        </select>
+      </div>
+      <button id="generateButton">Generate Password</button>
+    </form>
+
+    <div class="table-wrapper">
+      <label for="">Last 5</label>
+      <table id="tableDesktop" class="table-desktop">
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <span class="mono-font" id="generatedPassword"></span>
+  <table id="tableMobile" class="table-mobile">
+    <tbody>
+    </tbody>
+  </table>
+
+
+  <span class="end-text">Use <a target="_blank" href="https://www.mozilla.org/en-US/firefox/lockwise/">Firefox
+      Lockwise</a> as your password manager - it’s free!</span>
+  <script src="js/generator.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+
+</html>

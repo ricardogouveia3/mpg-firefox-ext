@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "MPG - Memorable Password Generator",
+  "version": "1.0",
+  "description": "Killing simple forever free password generator",
+  "homepage_url": "https://rcrd.me/mpg/",
+  "icons": {
+    "48": "icons/mpg-48.png",
+    "96": "icons/mpg-96.png"
+  },
+  "permissions": [],
+  "browser_action": {
+    "default_icon": "icons/mpg-32.png",
+    "default_title": "MPG - Memorable Password Generator",
+    "default_popup": "popup/index.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mpg@ricardogouveia3",
+      "strict_min_version": "57.0"
+    }
+  }
+  
+}
