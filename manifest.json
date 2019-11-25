@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "MPG - Memorable Password Generator",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Killing simple forever free password generator",
   "homepage_url": "https://rcrd.me/mpg/",
   "icons": {
