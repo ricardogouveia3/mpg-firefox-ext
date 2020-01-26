@@ -1,10 +1,6 @@
-// Full
-// const en = 'https://raw.githubusercontent.com/ricardogouveia3/genpass/master/data/words_dictionary_en.json';
-// const br = 'https://raw.githubusercontent.com/ricardogouveia3/genpass/master/data/words_dictionary_br.json';
-
-// Reduce
-const en = 'https://raw.githubusercontent.com/ricardogouveia3/mpg/master/data/words_reduce_en.json';
-const br = 'https://raw.githubusercontent.com/ricardogouveia3/mpg/master/data/words_reduce_br.json';
+// Dics
+const en = 'https://api.rcrd.me/mpg/en';
+const br = 'https://api.rcrd.me/mpg/br';
 
 
 let selectedDic = 'en';
@@ -85,7 +81,7 @@ function initializeDic() {
   words.then(
     response => response.json()).then(
       arrayOfWords => {
-        const words = Object.keys(arrayOfWords);
+        const words = arrayOfWords;
 
         validLengthWords = words.filter((word) => {
           if (word.length >= 3 && word.length <= 8 && !word.contai) { return true; } else { return false; }
